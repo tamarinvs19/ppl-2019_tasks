@@ -1,4 +1,4 @@
-from spiral_matrix import *
+from spiral_matrix import spiral_matrix
 
 
 def test_spiral_matrix_1():
@@ -23,6 +23,14 @@ def test_spiral_matrix_3():
             [11,  2,  1,  6, 19],
             [12,  3,  4,  5, 18],
             [13, 14, 15, 16, 17]
+            ]
+    assert expected == spiral_matrix(n)
+
+def test_spiral_matrix_4():
+    n = 2
+    expected = [
+            [4, 3],
+            [1, 2],
             ]
     assert expected == spiral_matrix(n)
 
