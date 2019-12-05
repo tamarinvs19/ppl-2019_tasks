@@ -2,6 +2,15 @@ import pytest
 import add_two_numbers
 
 
+def test_solution_0():
+    l1 = add_two_numbers.ListNode(1)
+    l2 = add_two_numbers.ListNode(2)
+    s = add_two_numbers.Solution()
+    res = s.addTwoNumbers(l1, l2)
+
+    assert res.val == 3
+    assert res.next == None
+
 def test_solution_1():
     l1 = add_two_numbers.ListNode(1)
     l2 = add_two_numbers.ListNode(2)
